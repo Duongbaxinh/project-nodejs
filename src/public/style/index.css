@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap");
+.main {
+  width: 100%;
+  height: auto;
+  padding: 50px 250px;
+  box-sizing: border-box;
+}
+.main__top {
+  width: 100%;
+  height: auto;
+}
+.main__top--header {
+  font-size: 32px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+.main__top--image {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=index.css.map */

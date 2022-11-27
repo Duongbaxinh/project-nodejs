@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/formUpdata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/addItem" method="POST" class="form" id="form" enctype="multipart/form-data">
+        <h1 class="form__header">ADD</h1>
+        <div class="form__controll">
+             <label for="avartar" id="avarta" class="form__lable"> <i style="font-size:32px;" class="fa-solid fa-folder-plus"></i> avarta</label> 
+        <input type="file" name="avarta" id="avartar"  class="form__input" >
+        <small></small>
+    </div>
+        <fieldset class="form__fieldset">
+            <legend>information</legend>
+            <div class="form__controll">
+            <label for="foodName" class="form__lable">foodName</label> 
+            <input type="text" name="foodName" id=""  class="form__input" placeholder="Enter infomation">
+             <small></small>
+            </div>
+            <div class="form__controll">
+                <label for="origin" class="form__lable">origin</label> 
+                <input type="text" name="origin" id=""  class="form__input" placeholder="Enter infomation">
+                 <small></small>
+                </div>
+            
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+            <legend>ingredient</legend>
+            <div class="form__controll">
+            <label for="nameIngredient" class="form__lable">nameIngredient</label> 
+            <input type="text" name="nameIngredient" id="" class="form__input" placeholder="Enter infomation">
+             <small></small>
+            </div>
+            <div class="form__controll">
+                <label for="mass" class="form__lable">mass</label> 
+                <input type="text" name="mass" id="" class="form__input" placeholder="Enter infomation">
+                 <small></small>
+                </div>
+            
+        </fieldset>
+        <div class="form__controll">
+            <label for="list" class="form__lable">list</label> 
+            <input type="text" name="list" id=""  class="form__input" placeholder="Enter infomation">
+             <small></small>
+            </div>
+
+       <input type="submit" value="Supmit" class="form__supmit">
+    </form>
+</body>
+</html>

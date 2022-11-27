@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500&family=Sen:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wraper{
+    position: relative;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+
+}
+.form{
+    width: 300px;
+    padding: 30px 30px 90px 30px;
+    box-shadow:  0 0 17px ;
+    border-radius: 5px;
+    
+    &__title{
+        text-align: center;
+    }
+    &__controll{
+        &--label{
+            display: block;
+            font-family: 'Sen';
+
+        }
+        &--input{
+            display: block;
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: 'Sen';
+            font-size: 16px;
+            color: red;
+            &:focus{
+                outline: none;
+                border-color: rgb(249, 76, 76);
+            }
+            &::placeholder{
+                color: silver;
+            }
+        }
+        &--small{
+            font-family: 'Sen';
+            color: red;
+            visibility: hidden;
+        }
+    }
+    &__button{
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        display: block;
+        background-color: rgb(26, 26, 249);
+        color: white;
+        border-radius: 5px;
+        border: 0;
+
+    }
+    &__btn-register{
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        width: 240px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 16px;
+        display: block;
+        background-color: rgb(26, 26, 249);
+        color: white;
+        border-radius: 5px;
+        border: 0;
+    }
+}
