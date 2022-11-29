@@ -15,7 +15,11 @@ const getFormRegister = (req,res)=>{
 }
 const regist = (req, res) => {
   console.log(req.body);
-  bcrypt.hash(req.body.passWord, 10).then(function (hash) {
+  author.findOne({email:req.body.email}).then((data)=>{
+    if(data){
+      res.send('acount readly')
+    }else{
+       bcrypt.hash(req.body.passWord, 10).then(function (hash) {
     let user = new author({
       userName: req.body.userName,
       email: req.body.email,
@@ -23,9 +27,12 @@ const regist = (req, res) => {
       passWord: hash,
     });
     user.save().then((data) => {
-      res.send(data);
+      res.render('form_login');
     });
   });
+    }
+  })
+ 
 };
 const login = async (req, res, next) => {
   let userNames = req.body.userName;

@@ -5,6 +5,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="javascript/ts.css">
     <body>
       <div class="container">
         <div class="wraper">
@@ -21,96 +22,14 @@
             </div>
             <a href="form_addItem"><button class="header__button">Booking Now</button></a>
             <div class="header__login"><a href="/author/login_form"><i class="fa-solid fa-user"></i></a></i></div>
-  
             <div class="header__store">
               <i class="fa-solid fa-bookmark"></i>
-              <div class="header__store--list">
-                <div class="header__store--item">
-                  <img class="header__store--image" src="ProjectJs/public/image/food-gril.png"></img>
-                  <p class="header__store--name">Ga nuong</p>
-                </div>
+              <div class="header__store--list" id="store">
+              
               </div>
             </div>
           </div>
-  
-  
-  
-  
-  
-           <div class="Hero">
-            <div class="Hero__content">
-              <p class="Hero__content--title">
-                Making time a good time by making food the good food.
-              </p>
-              <p class="Hero__content--des">
-                There are many things are needed to start the Fast Food Business.
-                You need not only Just Food Stalls with Persons but also
-                specialized equipment,
-              </p>
-              <div class="Hero__content--groupButton">
-                <div class="Hero__content--btnleft">Order Now</div>
-                <div class="Hero__content--btnright">Food Details</div>
-              </div>
-            </div>
-  
-            <img
-              class="Hero__background"
-              src="/ProjectJs/public/image/bannerBeef.png"
-              alt=""
-            />
-          </div> 
-        </div>
-         <div class="feature">
-          <div class="feature__content">
-            <div class="feature__content--label">Features</div>
-            <div class="feature__content--title">Food with a New Passion</div>
-          </div>
-          <div class="feature__item">
-            <div class="feature__delivery">
-              <div class="feature__delivery--background">
-                <img class="feature__delivery--logo" src="/ProjectJs/public/image/logo-house.png"></img>
-              </div>
-              <p class="feature__delivery--title">Quality Food</p>
-              <p class="feature__delivery--des">
-                It can be a very secure path to earn good money and make you very
-                successful creative entrepreneur.
-              </p>
-            </div>
-            <div class="feature__delivery">
-              <div class="feature__delivery--background">
-                <img class="feature__delivery--logo" src="/ProjectJs/public/image/logo-delivery.png"></img>
-              </div>
-              <p class="feature__delivery--title">Food Delivery</p>
-              <p class="feature__delivery--des">
-                It can be a very secure path to earn good money and make you very
-                successful creative entrepreneur.
-              </p>
-            </div>
-            <div class="feature__delivery">
-              <div class="feature__delivery--background">
-                <img class="feature__delivery--logo" src="/ProjectJs/public/image/logo-laugh.png"></img>
-              </div>
-              <p class="feature__delivery--title">Super Taste</p>
-              <p class="feature__delivery--des">
-                It can be a very secure path to earn good money and make you very
-                successful creative entrepreneur.
-              </p>
-            </div>
-          </div>
-        </div> 
-  
-         <div class="aboutUs">
-          <img src="/ProjectJs/public/image/bannerGir.png" alt="" class="aboutUs__image">
-          <div class="aboutUs__content">
-            <p class="aboutUs__content--lable">About us</p>
-            <p class="aboutUs__content--title">Food Stalls with Persons but  to  Product marketing plane
-              catlogues etc to. </p>
-            <p class="aboutUs__content--des">There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also 
-              equipment  make your marketing plane Effective.</p>
-            <button class="aboutUs__content--btn">Read more</button>
-          </div>
-          <img src="/ProjectJs/public/image/bgcurver.png" alt="" class="aboutUs__background">
-        </div> -->
+
         <div class="menu">
           <div class="menu__header">
             <div class="menu__header--wrape">
@@ -135,12 +54,18 @@
                     </div>
                     <p class="menu__item--des">There are many things are needed to start the Fast Food Business.</p>
                     <div class="menu__item--end">
-                      <a href="">
-                        <button class="menu__item--btn">
-                        <i class="fa-regular fa-plus"></i>
-                          
+                    
+                        <button class="menu__item--btn" id="store-btn">
+                          <label for="<%= element.id %> "> <i class="fa-regular fa-plus"></i></label>
+                          <form style="display: none;" action="saveStore" method="POST">
+                          <input type="text" name="idCatalogy" id="input"  class="input" value="<%= element.id %>">
+                          <input type="text" name="avartar" id="input"  class="input" value="<%= element.avarta %>">
+                          <input type="text" name="foodName" id="input"  class="input" value="<%= element.information.foodName %>">
+                          <input type="submit" id="<%= element.id %> " value="submit">
+                        </form>
+                         
                       </button>
-                    </a>
+
                       <div class="menu__item--groupStar">
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
@@ -259,5 +184,6 @@
           </div>
         </div> 
       </div>
+      <button id="btnkk">btnkk</button>
     </body>
-    <script src=""></script>
+    <script src="javascript/index.js"></script>

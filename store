@@ -1,0 +1,74 @@
+        <!-- <div class="Hero">
+            <div class="Hero__content">
+              <p class="Hero__content--title">
+                Making time a good time by making food the good food.
+              </p>
+              <p class="Hero__content--des">
+                There are many things are needed to start the Fast Food Business.
+                You need not only Just Food Stalls with Persons but also
+                specialized equipment,
+              </p>
+              <div class="Hero__content--groupButton">
+                <div class="Hero__content--btnleft">Order Now</div>
+                <div class="Hero__content--btnright">Food Details</div>
+              </div>
+            </div>
+  
+            <img
+              class="Hero__background"
+              src="/ProjectJs/public/image/bannerBeef.png"
+              alt=""
+            />
+          </div> 
+        </div>
+         <div class="feature">
+          <div class="feature__content">
+            <div class="feature__content--label">Features</div>
+            <div class="feature__content--title">Food with a New Passion</div>
+          </div>
+          <div class="feature__item">
+            <div class="feature__delivery">
+              <div class="feature__delivery--background">
+                <img class="feature__delivery--logo" src="/ProjectJs/public/image/logo-house.png"></img>
+              </div>
+              <p class="feature__delivery--title">Quality Food</p>
+              <p class="feature__delivery--des">
+                It can be a very secure path to earn good money and make you very
+                successful creative entrepreneur.
+              </p>
+            </div>
+            <div class="feature__delivery">
+              <div class="feature__delivery--background">
+                <img class="feature__delivery--logo" src="/ProjectJs/public/image/logo-delivery.png"></img>
+              </div>
+              <p class="feature__delivery--title">Food Delivery</p>
+              <p class="feature__delivery--des">
+                It can be a very secure path to earn good money and make you very
+                successful creative entrepreneur.
+              </p>
+            </div>
+            <div class="feature__delivery">
+              <div class="feature__delivery--background">
+                <img class="feature__delivery--logo" src="/ProjectJs/public/image/logo-laugh.png"></img>
+              </div>
+              <p class="feature__delivery--title">Super Taste</p>
+              <p class="feature__delivery--des">
+                It can be a very secure path to earn good money and make you very
+                successful creative entrepreneur.
+              </p>
+            </div>
+          </div>
+        </div> 
+  
+         <div class="aboutUs">
+          <img src="/ProjectJs/public/image/bannerGir.png" alt="" class="aboutUs__image">
+          <div class="aboutUs__content">
+            <p class="aboutUs__content--lable">About us</p>
+            <p class="aboutUs__content--title">Food Stalls with Persons but  to  Product marketing plane
+              catlogues etc to. </p>
+            <p class="aboutUs__content--des">There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also 
+              equipment  make your marketing plane Effective.</p>
+            <button class="aboutUs__content--btn">Read more</button>
+          </div>
+          <img src="/ProjectJs/public/image/bgcurver.png" alt="" class="aboutUs__background">
+        </div> 

@@ -21,7 +21,7 @@ db();
 initView(app);
 initRouter(app);
 initAuthor(app)
-// initAuthor(app);
+initAuthor(app);
 templet(app);
 
 app.listen(port,()=>{

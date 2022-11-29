@@ -39,8 +39,8 @@ ingredient:{
     mass:{
         type:Array
     },
-        list:{
-            type:String
+    list:{
+            type:Array
         }
 }
 })

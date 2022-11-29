@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/scss/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/scss/style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wraper">
-        <form action="/login"  method="POST" id="form" class="form"> 
-            <h2 class="form__title">Form Login</h2>
-           <div class="form__controll">
-               <label for="userName" class="form__controll--label">userName</label>
-               <input type="text" class="form__controll--input" name="userName" placeholder="Enter userName" value="duongbaxinh">
-               <small class="form__controll--small">Error Username</small>
-           </div>
-           
-           <div class="form__controll">
-               <label for="Email" class="form__controll--label">Email</label>
-               <input type="email" name="email" class="form__controll--input" placeholder="Enter Email" value="xinh@gmail.com">
-               <small class="form__controll--small">Error Email</small>
-           </div>
-            <div class="form__controll">
-               <label for="phone" class="form__controll--label">phone</label>
-               <input type="number" name="phone" class="form__controll--input" placeholder="Enter phone" value="0903293232">
-               <small class="form__controll--small">Error phone</small>
-           </div>
-           <div class="form__controll">
-               <label for="Password" class="form__controll--label">Password</label>
-               <input type="password" name="passWord" class="form__controll--input" placeholder="Enter Password" value="12345">
-               <small class="form__controll--small">Error Password</small>
-           </div>
-           <input class="form__button" type="submit" value="submit"/>
-    
-          
-        </form>
-        <a  href="form_register"><button class="form__btn-register">register</button></a>
+      <form action="/login" method="POST" id="form" class="form">
+        <h2 class="form__title">Form Login</h2>
+        <div class="form__controll">
+          <label for="userName" class="form__controll--label">userName</label>
+          <input
+            type="text"
+            class="form__controll--input"
+            name="userName"
+            placeholder="Enter userName"
+            value="duongbaxinh"
+          />
+          <small class="form__controll--small">Error Username</small>
+        </div>
+
+        <div class="form__controll">
+          <label for="Email" class="form__controll--label">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="form__controll--input"
+            placeholder="Enter Email"
+            value="xinh@gmail.com"
+          />
+          <small class="form__controll--small">Error Email</small>
+        </div>
+        <div class="form__controll">
+          <label for="phone" class="form__controll--label">phone</label>
+          <input
+            type="number"
+            name="phone"
+            class="form__controll--input"
+            placeholder="Enter phone"
+            value="0903293232"
+          />
+          <small class="form__controll--small">Error phone</small>
+        </div>
+        <div class="form__controll">
+          <label for="Password" class="form__controll--label">Password</label>
+          <input
+            type="password"
+            name="passWord"
+            class="form__controll--input"
+            placeholder="Enter Password"
+            value="12345"
+          />
+          <small class="form__controll--small">Error Password</small>
+        </div>
+        <input class="form__button" type="submit" value="submit" />
+      </form>
+      <a href="form_register"
+        ><button class="form__btn-register">register</button></a
+      >
     </div>
-    
-   
-</body>
+  </body>
 </html>

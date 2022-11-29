@@ -11,6 +11,7 @@
 
     <form action="/updateItem" method="POST" class="form" id="form" enctype="multipart/form-data">
         <h1 class="form__header">Update</h1>
+        <p><%= item.avarta %> </p>
         <div class="form__controll">
             <label for="id" class="form__lable">Id</label> 
        <input type="text" name="id" id="" value="<%= item.id %>" class="form__input" placeholder="Enter infomation">
@@ -19,6 +20,7 @@
         <div class="form__controll">
             <img style="width: auto;height: auto;" src="/<%= item.avarta %> " alt="">
              <label for="avartar" class="form__lable">avarta</label> 
+             <input style="visibility:hidden;" type="text" name="oldid" value="<%= item.avarta %> ">
         <input type="file" name="avarta" id="form__input" value="<%= item.avarta %> " class="form__input" placeholder="Enter infomation">
         <small></small>
     </div>
@@ -26,7 +28,7 @@
             <legend>information</legend>
             <div class="form__controll">
             <label for="foodName" class="form__lable">foodName</label> 
-            <input type="text" name="foodName" id=""  class="form__input" placeholder="Enter infomation">
+            <input type="text" name="foodName" id=""  class="form__input" placeholder="Enter infomation" value="<%= item.information.foodName %> ">
 
              <small></small>
             </div>

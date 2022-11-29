@@ -76,15 +76,27 @@
     width: 100%;
     height: 100px;
     @include displayFlexCenter($justi:space-between,$gap:32px);
-     background-color: $primary;
+    background-color: silver;
+    margin-top: 10px;
+   
+   }
+   &--form{
+    width: 100%;
+    height: 100%;
+    @include displayFlexCenter($gap:32px);
+   }
+   &--input{
+ display:none
    }
    &--image{
+    margin-top: 14px;
     width: 100px;
     height: 100%;
     z-index: 1;
    }
    &--name{
     @include heading2;
+    right: 10px;
     flex-grow: 1;
    }
   }

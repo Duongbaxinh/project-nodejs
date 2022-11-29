@@ -18,9 +18,8 @@ const getItem =(req,res)=>{
 const getFormAdd = (req,res,next)=>{
   res.render('form_addItem')
 }
-const addCatalogy= (req,res,next)=>{
-  console.log(req.file)
-
+const addCatalogy= (req,res,next)=>{ 
+  console.log(req.file.path)
     const item = new catalogy({
       
         Interactive: {
@@ -38,9 +37,7 @@ const addCatalogy= (req,res,next)=>{
           ingredient: {
             nameIngredient: req.body.nameIngredient,
             mass: req.body.mass,
-            active: {
               list: req.body.list,
-            },
           },
     });
    
@@ -61,12 +58,12 @@ const getFormUpdate = (req,res)=>{
   catalogy.findById(catalogyid).then(data=>{
     res.render('form_update',{item:data})
   })
-  
 }
 
 
 const updata = (req,res,next)=>{
   console.log('danh sach', req.body)
+  
   let catalogyUpdate ={
     Interactive: {
         like: req.body.like,
@@ -88,11 +85,13 @@ const updata = (req,res,next)=>{
         },
       },
 }
-if(req.file.path){
+if(req.file){
   let path = req.file.path
 let pathAvata = path.substring(path.indexOf('image'));
 catalogyUpdate.avarta = pathAvata
-} 
+} else if(req.file.path === undefined){
+  catalogy.avarta = req.body.oldid
+}
   catalogy.findByIdAndUpdate(req.body.id,{$set:catalogyUpdate}).then((data)=>{
     res.redirect('/')
   })

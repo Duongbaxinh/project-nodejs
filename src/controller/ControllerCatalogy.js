@@ -4,15 +4,24 @@ const modelCatalogy = require("../model/Catology");
 
 
 
-const getItem = (req,res,next)=>{
-  console.log(req.body)
-  let id = req.body.id
-  modelCatalogy.findById('63809399528a819b74a825bb').then((Response)=>{
-    res.json({
-      Response
-    });
+//
+const itemStore = (req,res)=>{
+  let catalogyId = req.params.id;
+  console.log(req.params.id)
+modelCatalogy.findById(catalogyId,(error,data)=>{
+  console.log(data)
+  res.json({
+    data,
   })
-    
+})
+}
+
+const getItemStore = (req,res)=>{
+  store.find({}).then((data)=>{
+      res.json({
+          data,
+      })
+  })
 }
 //show list catalogy
 const showlistCatalogy = (req, res) => {
@@ -29,26 +38,11 @@ const showlistCatalogy = (req, res) => {
       });
     });
 };
-//show a catalogy
-const showCatalogy = (req, res) => {
-  let catalogyId = req.body.id;
-  modelCatalogy
-    .findById(catalogyId)
-    .then((Response) => {
-      res.json({
-        Response,
-      });
-    })
-    .catch((error) => {
-      res.json({
-        mesaage: "a error in occurent!",
-      });
-    });
-};
+
+
 // add a catalogy
 const addCatalogy = (req, res) => {
   console.log(req.body);
-
   let catalogy = new modelCatalogy({
     Interactive: {
       like: req.body.like,
@@ -148,5 +142,6 @@ module.exports = {
   addCatalogy,
   updateCatalogy,
   deleteCatalogy,
-  getItem
+  itemStore,
+  getItemStore
 };
